@@ -3,7 +3,7 @@ resource "azurerm_resource_group" "example" {
   location = var.location
 }
 
-# Virtual Network created by follwing documentation
+# Virtual Network created by following documentation
 resource "azurerm_virtual_network" "main" {
   name                = "${var.prefix}-network"
   address_space       = ["10.0.0.0/16"]
